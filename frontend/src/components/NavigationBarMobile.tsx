@@ -45,7 +45,7 @@ function NavigationBarMobile() {
 											</Link>
 										</div>
 										<div className="grid gap-3">
-											<a href="../../public/Eren_Gulenoglu_CV.pdf" target="_blank" rel="noopener noreferrer" className="underline">
+											<a href="https://drive.google.com/file/d/1nEDnslfksm6TJUyYXQQ62aJjkx8M8U4x/view" target="_blank" rel="noopener noreferrer" className="underline">
 												<Button className="w-full cursor-pointer" variant="outline">
 													Resume
 												</Button>
@@ -53,7 +53,7 @@ function NavigationBarMobile() {
 										</div>
 										<div className="grid gap-3">
 											<a
-												href="https://www.linkedin.com/in/YOUR_LINKEDIN_USERNAME"
+												href="https://www.linkedin.com/in/eren-gulenoglu-95690627b/"
 												target="_blank"
 												rel="noopener noreferrer"
 												className="w-full flex items-center text-blue-500 transition-colors hover:text-[#7469B6]"
