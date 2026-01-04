@@ -5,6 +5,7 @@ import ErenIntro from "@/components/ErenIntro";
 import ProjectIntro from "@/components/ProjectIntro";
 
 import work1 from "../assets/CCT305/Utm305.png";
+import work2 from "../assets/CCT477/Utm477.jpg";
 // import work2 from "../assets/Utm477.jpg";
 // import work3 from "../assets/Rosehammer.png";
 
@@ -39,7 +40,15 @@ function Home() {
 							link="/library-makerspace"
 						/>
 						<ProjectIntro image={work3} title="Rosehammer Website" description="Webdesign Project - React & Django" color="#B7B1F2" rotate={10} link="/rosehammer-website" /> */}
-						<ProjectIntro image={work1} title="UTM Connect" description="High Fidelity UX Case Study" color="#FEEAC9" rotate={0} link="/utm-connect" />
+						<ProjectIntro image={work1} title="UTM Connect" description="High Fidelity UX Case Study" color="#FEEAC9" rotate={0} link="/utm-connect-ux" />
+						<ProjectIntro
+							image={work2}
+							title="Improving Transparency in the Mississauga Library Makerspace"
+							description="UX Research Case Study"
+							color="#9ECAD6"
+							rotate={0}
+							link="/hazel-mccallion-ux"
+						/>
 						<p className="text-xl roboto">Under construction.</p>
 					</div>
 				</div>
