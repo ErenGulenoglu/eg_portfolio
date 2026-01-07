@@ -452,10 +452,12 @@ function HML() {
 								platforms like Miro. I learned the value of engaging stakeholders early, as they revealed insights I hadn't anticipated, such as the importance of tutorials, mascots, and smooth
 								workflows. Overall, this process showed me how critical iterative, participatory design is for creating solutions that truly meet users' needs.
 							</p>
-							<p className="text-lg roboto font-mono w-full">This link will take you to the post I shared about this project:</p>
-							<a href="https://www.linkedin.com/feed/update/urn:li:activity:7402815181472354304/" target="_blank" className="block break-all text-wrap text-blue-500 hover:underline">
-								https://www.linkedin.com/feed/update/urn:li:activity:7402815181472354304/
-							</a>
+							<div className="flex flex-col w-full">
+								<p className="text-lg roboto font-mono w-full">This link will take you to the post I shared about this project:</p>
+								<a href="https://www.linkedin.com/feed/update/urn:li:activity:7402815181472354304/" target="_blank" className="block break-all text-wrap text-blue-500 hover:underline">
+									https://www.linkedin.com/feed/update/urn:li:activity:7402815181472354304/
+								</a>
+							</div>
 						</div>
 					</TextFade>
 				</div>
