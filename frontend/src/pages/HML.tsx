@@ -8,10 +8,6 @@ import TextFade from "../components/animations/TextFade";
 
 import preview477 from "../assets/CCT477/Utm477.jpg";
 import flow477 from "../assets/CCT477/FlowModel477.png";
-import lowmidfid305 from "../assets/CCT305/305midfidelity.png";
-import highfid305 from "../assets/CCT305/305high-fid.png";
-import persona305 from "../assets/CCT305/305Persona.jpg";
-import prioritizationgrid305 from "../assets/CCT305/305Prioritization.jpg";
 
 function HML() {
 	useEffect(() => {
