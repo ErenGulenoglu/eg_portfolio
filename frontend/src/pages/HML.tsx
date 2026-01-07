@@ -307,7 +307,7 @@ function HML() {
 								<h3 className="font-bold text-xl">Flow Model</h3>
 								<img src={flow477} className="w-full object-cover object-center border border-foreground rounded-xl" />
 								<p>These models shown here are just applied on one user. If you like to see the application on the other user as well you can consult to our research document:</p>
-								<a href="https://drive.google.com/file/d/13P-FCVxZcYx8O9kWPRN3CIFGq8XhfoG1/view?usp=sharing" target="_blank" className="text-blue-500 hover:underline">
+								<a href="https://drive.google.com/file/d/13P-FCVxZcYx8O9kWPRN3CIFGq8XhfoG1/view?usp=sharing" target="_blank" className="w-full text-wrap text-blue-500 hover:underline">
 									https://drive.google.com/file/d/13P-FCVxZcYx8O9kWPRN3CIFGq8XhfoG1/view?usp=sharing
 								</a>
 							</div>
@@ -449,12 +449,12 @@ function HML() {
 							<p className="text-lg roboto font-mono">
 								The main takeaway for me is that I need to focus on making the design user-friendly and accessible, while incorporating the functionality my stakeholders suggested. I also realized
 								that not all participants are comfortable using digital UI tools, so in the future I will make activities simpler or check beforehand whether participants have experience with
-								platforms like Miro. I learned the value of engaging stakeholders early, as they revealed insights I hadn’t anticipated, such as the importance of tutorials, mascots, and smooth
-								workflows. Overall, this process showed me how critical iterative, participatory design is for creating solutions that truly meet users’ needs.
+								platforms like Miro. I learned the value of engaging stakeholders early, as they revealed insights I hadn't anticipated, such as the importance of tutorials, mascots, and smooth
+								workflows. Overall, this process showed me how critical iterative, participatory design is for creating solutions that truly meet users' needs.
 							</p>
-							<p className="text-lg roboto font-mono">
+							<p className="text-lg roboto font-mono w-full">
 								This link will take you to the post I shared about this project:{" "}
-								<a href="https://www.linkedin.com/feed/update/urn:li:activity:7402815181472354304/" target="_blank" className="text-blue-500 hover:underline">
+								<a href="https://www.linkedin.com/feed/update/urn:li:activity:7402815181472354304/" target="_blank" className="w-full text-blue-500 text-wrap hover:underline">
 									https://www.linkedin.com/feed/update/urn:li:activity:7402815181472354304/
 								</a>
 							</p>
