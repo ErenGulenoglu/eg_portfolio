@@ -6,11 +6,13 @@ import Portfolio from "./pages/Portfolio";
 import HML from "./pages/HML";
 
 import { ThemeProvider } from "./components/theme-provider";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
 	return (
 		<ThemeProvider defaultTheme="light" storageKey="vite-ui-theme">
 			<HashRouter>
+				<ScrollToTop />
 				<Routes>
 					<Route path="/" element={<Home />} />
 					<Route path="/utm-connect-ux" element={<UTMConnect />} />

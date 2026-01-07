@@ -40,7 +40,7 @@ function Home() {
 							link="/library-makerspace"
 						/>
 						<ProjectIntro image={work3} title="Rosehammer Website" description="Webdesign Project - React & Django" color="#B7B1F2" rotate={10} link="/rosehammer-website" /> */}
-						<ProjectIntro image={work1} title="UTM Connect" description="High Fidelity UX Case Study" color="#FEEAC9" rotate={0} link="/utm-connect-ux" />
+						<ProjectIntro image={work1} title="UTM Connect" description="High Fidelity UX/UI Design Case Study" color="#FEEAC9" rotate={0} link="/utm-connect-ux" />
 						<ProjectIntro
 							image={work2}
 							title="Improving Transparency in the Mississauga Library Makerspace"
@@ -49,7 +49,6 @@ function Home() {
 							rotate={0}
 							link="/hazel-mccallion-ux"
 						/>
-						<p className="text-xl roboto">Under construction.</p>
 					</div>
 				</div>
 			</main>
