@@ -3,12 +3,13 @@ import { TypingEffect } from "./animations/typing-effect";
 import TextFade from "./animations/TextFade";
 
 import { memo } from "react";
+import { Link } from "react-router-dom";
 
 function ErenIntro() {
 	return (
 		<div className="flex flex-col justify-center items-center w-[80vw] py-[5vh] gap-[5vw] mt-8 lg:flex-row lg:items-stretch">
 			<div className="flex w-full justify-center items-center lg:w-1/2">
-				<img src={linkedin} alt="Eren Gulenoglu" className="w-3/5 aspect-square rounded-full object-cover border border-foreground lg:w-1/2" />
+				<img src={linkedin} alt="Eren Gulenoglu" className="w-3/4 aspect-square rounded-full object-cover border border-foreground 2xl:w-1/2" />
 			</div>
 			<div className="flex flex-col w-full border-t-2 border-foreground justify-start items-start py-[2vh] lg:w-1/2">
 				<h1 className="text-4xl roboto font-medium text-[#7469B6]">
@@ -27,9 +28,11 @@ function ErenIntro() {
 					<p className="text-md roboto font-mono mt-4">
 						Feel free to explore my portfolio to see some of the projects I've worked on, and don't hesitate to reach out if you'd like to collaborate or learn more about my work!
 					</p>
-					<button className="w-[9em] h-[2.5em] mt-4 text-black text-lg font-semibold border border-black cursor-pointer rounded-3xl bg-white duration-320 hover:bg-[#8CA9FF] hover:text-white">
-						See My Portfolio
-					</button>
+					<Link to="/portfolio">
+						<button className="w-[9em] h-[2.5em] mt-4 text-black text-lg font-semibold border border-black cursor-pointer rounded-3xl bg-white duration-320 hover:bg-[#8CA9FF] hover:text-white">
+							See My Portfolio
+						</button>
+					</Link>
 				</TextFade>
 			</div>
 		</div>
