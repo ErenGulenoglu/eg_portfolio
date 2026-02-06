@@ -10,21 +10,21 @@ import { ThemeProvider } from "./components/theme-provider";
 import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
-  return (
-    <ThemeProvider defaultTheme="light" storageKey="vite-ui-theme">
-      <HashRouter>
-        <ScrollToTop />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/utm-connect-ux" element={<UTMConnect />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/portfolio" element={<Portfolio />} />
-          <Route path="/hazel-mccallion-ux" element={<HML />} />
-          <Route path="/unilink-ux" element={<UniLink />} />
-        </Routes>
-      </HashRouter>
-    </ThemeProvider>
-  );
+	return (
+		<ThemeProvider defaultTheme="light" storageKey="vite-ui-theme">
+			<HashRouter>
+				<ScrollToTop />
+				<Routes>
+					<Route path="/" element={<Home />} />
+					<Route path="/utm-connect-ux" element={<UTMConnect />} />
+					<Route path="/about" element={<About />} />
+					<Route path="/portfolio" element={<Portfolio />} />
+					<Route path="/hazel-mccallion-ux" element={<HML />} />
+					<Route path="/unilink-ux" element={<UniLink />} />
+				</Routes>
+			</HashRouter>
+		</ThemeProvider>
+	);
 }
 
 export default App;
