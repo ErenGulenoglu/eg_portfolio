@@ -13,36 +13,38 @@ import { memo, useEffect, useState } from "react";
 
 // kirmizi rengin okunurlugu iyi degil
 function Home() {
-	useEffect(() => {
-		document.title = "Eren Gulenoglu - Home";
-	});
-	const [rotateAmount, setRotateAmount] = useState(0);
-	useEffect(() => {
-		const handleResize = () => {
-			if (window.innerWidth >= 1024) {
-				setRotateAmount(10);
-			} else {
-				setRotateAmount(0);
-			}
-		};
-		handleResize();
-		window.addEventListener("resize", handleResize);
-		return () => window.removeEventListener("resize", handleResize);
-	}, []);
-	return (
-		<div>
-			<div className="sticky top-0 w-full hidden md:block z-50">
-				<NavigationBar />
-			</div>
-			<div className="sticky top-0 w-full block md:hidden z-50">
-				<NavigationBarMobile />
-			</div>
-			<main className="flex flex-col justify-center items-center w-full">
-				<ErenIntro />
-				<div className="flex flex-col w-[80vw] justify-start items-center mb-8">
-					<h1 className="text-3xl w-full roboto font-bold mb-8 border-b-2 border-foreground text-[#7469B6]">Featured Works</h1>
-					<div className="flex w-full flex-col justify-center items-center gap-4 my-12 lg:flex-row">
-						{/* <ProjectIntro image={work1} title="UTM Connect" description="High Fidelity UX Case Study" color="#FEEAC9" rotate={-10} link="/utm-connect" />
+  useEffect(() => {
+    document.title = "Eren Gulenoglu - Home";
+  });
+  const [rotateAmount, setRotateAmount] = useState(0);
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth >= 1024) {
+        setRotateAmount(10);
+      } else {
+        setRotateAmount(0);
+      }
+    };
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+  return (
+    <div>
+      <div className="sticky top-0 w-full hidden md:block z-50">
+        <NavigationBar />
+      </div>
+      <div className="sticky top-0 w-full block md:hidden z-50">
+        <NavigationBarMobile />
+      </div>
+      <main className="flex flex-col justify-center items-center w-full">
+        <ErenIntro />
+        <div className="flex flex-col w-[80vw] justify-start items-center mb-8">
+          <h1 className="text-3xl w-full roboto font-bold mb-8 border-b-2 border-foreground text-[#7469B6]">
+            Featured Works
+          </h1>
+          <div className="flex w-full flex-col justify-center items-center gap-4 my-12 lg:flex-row">
+            {/* <ProjectIntro image={work1} title="UTM Connect" description="High Fidelity UX Case Study" color="#FEEAC9" rotate={-10} link="/utm-connect" />
 						<ProjectIntro
 							className="z-1"
 							image={work2}
@@ -53,23 +55,37 @@ function Home() {
 							link="/library-makerspace"
 						/>
 						<ProjectIntro image={work3} title="Rosehammer Website" description="Webdesign Project - React & Django" color="#B7B1F2" rotate={10} link="/rosehammer-website" /> */}
-						<ProjectIntro image={work1} title="UTM Connect" description="High Fidelity UI/UX Design Case Study" color="#FEEAC9" rotate={-rotateAmount} link="/utm-connect-ux" />
-						<ProjectIntro
-							image={work2}
-							title="Improving Transparency in the Mississauga Library Makerspace"
-							description="UX Research Case Study"
-							color="#9ECAD6"
-							rotate={0}
-							link="/hazel-mccallion-ux"
-							className="z-1"
-						/>
-						<ProjectIntro image={work2} title="Mid Fidelidy UI/UX Design Project" description="UX Research Case Study" color="#B7B1F2" rotate={rotateAmount} link="/unilink-ux" />
-					</div>
-				</div>
-			</main>
-			<Footer />
-		</div>
-	);
+            <ProjectIntro
+              image={work1}
+              title="UTM Connect"
+              description="High Fidelity UI/UX Design Case Study"
+              color="#FEEAC9"
+              rotate={-rotateAmount}
+              link="/utm-connect-ux"
+            />
+            <ProjectIntro
+              image={work2}
+              title="Improving Transparency in the Mississauga Library Makerspace"
+              description="UX Research Case Study"
+              color="#9ECAD6"
+              rotate={0}
+              link="/hazel-mccallion-ux"
+              className="z-1"
+            />
+            <ProjectIntro
+              image={work2}
+              title="UniLink"
+              description="Mid Fidelidy UI/UX Design Project"
+              color="#FFD1DC"
+              rotate={rotateAmount}
+              link="/unilink-ux"
+            />
+          </div>
+        </div>
+      </main>
+      <Footer />
+    </div>
+  );
 }
 
 export default memo(Home);
