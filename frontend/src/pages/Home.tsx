@@ -9,13 +9,26 @@ import work2 from "../assets/CCT477/Utm477.jpg";
 // import work2 from "../assets/Utm477.jpg";
 // import work3 from "../assets/Rosehammer.png";
 
-import { memo, useEffect } from "react";
+import { memo, useEffect, useState } from "react";
 
 // kirmizi rengin okunurlugu iyi degil
 function Home() {
 	useEffect(() => {
 		document.title = "Eren Gulenoglu - Home";
 	});
+	const [rotateAmount, setRotateAmount] = useState(0);
+	useEffect(() => {
+		const handleResize = () => {
+			if (window.innerWidth >= 1024) {
+				setRotateAmount(10);
+			} else {
+				setRotateAmount(0);
+			}
+		};
+		handleResize();
+		window.addEventListener("resize", handleResize);
+		return () => window.removeEventListener("resize", handleResize);
+	}, []);
 	return (
 		<div>
 			<div className="sticky top-0 w-full hidden md:block z-50">
@@ -40,7 +53,7 @@ function Home() {
 							link="/library-makerspace"
 						/>
 						<ProjectIntro image={work3} title="Rosehammer Website" description="Webdesign Project - React & Django" color="#B7B1F2" rotate={10} link="/rosehammer-website" /> */}
-						<ProjectIntro image={work1} title="UTM Connect" description="High Fidelity UX/UI Design Case Study" color="#FEEAC9" rotate={0} link="/utm-connect-ux" />
+						<ProjectIntro image={work1} title="UTM Connect" description="High Fidelity UI/UX Design Case Study" color="#FEEAC9" rotate={-rotateAmount} link="/utm-connect-ux" />
 						<ProjectIntro
 							image={work2}
 							title="Improving Transparency in the Mississauga Library Makerspace"
@@ -48,7 +61,9 @@ function Home() {
 							color="#9ECAD6"
 							rotate={0}
 							link="/hazel-mccallion-ux"
+							className="z-1"
 						/>
+						<ProjectIntro image={work2} title="Mid Fidelidy UI/UX Design Project" description="UX Research Case Study" color="#B7B1F2" rotate={rotateAmount} link="/unilink-ux" />
 					</div>
 				</div>
 			</main>
