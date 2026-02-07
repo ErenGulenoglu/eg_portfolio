@@ -43,17 +43,6 @@ function Home() {
 				<div className="flex flex-col w-[80vw] justify-start items-center mb-8">
 					<h1 className="text-3xl w-full roboto font-bold mb-8 border-b-2 border-foreground text-[#7469B6]">Featured Works</h1>
 					<div className="flex w-full flex-col justify-center items-center gap-4 my-12 lg:flex-row">
-						{/* <ProjectIntro image={work1} title="UTM Connect" description="High Fidelity UX Case Study" color="#FEEAC9" rotate={-10} link="/utm-connect" />
-						<ProjectIntro
-							className="z-1"
-							image={work2}
-							title="Improving Transparency in Mississauga Library Makerspace"
-							description="UX Design & Research Project"
-							color="#FFA4A4"
-							rotate={0}
-							link="/library-makerspace"
-						/>
-						<ProjectIntro image={work3} title="Rosehammer Website" description="Webdesign Project - React & Django" color="#B7B1F2" rotate={10} link="/rosehammer-website" /> */}
 						<ProjectIntro image={work1} title="UTM Connect" description="High Fidelity UI/UX Design Case Study" color="#FEEAC9" rotate={-rotateAmount} link="/utm-connect-ux" />
 						<ProjectIntro
 							image={work2}
