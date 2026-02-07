@@ -37,7 +37,7 @@ function Portfolio() {
 							rotate={0}
 							link="/hazel-mccallion-ux"
 						/>
-						<ProjectIntro image={work3} title="UniLink" description="Mid Fidelidy UI/UX Design Project" color="#FFD1DC" rotate={0} link="/unilink-ux" />
+						<ProjectIntro image={work3} title="UniLink" description="Mid Fidelity UI/UX Design Project" color="#FFD1DC" rotate={0} link="/unilink-ux" />
 					</div>
 				</div>
 			</main>

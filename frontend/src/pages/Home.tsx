@@ -64,7 +64,7 @@ function Home() {
 							link="/hazel-mccallion-ux"
 							className="z-1"
 						/>
-						<ProjectIntro image={work3} title="UniLink" description="Mid Fidelidy UI/UX Design Project" color="#FFD1DC" rotate={rotateAmount} link="/unilink-ux" />
+						<ProjectIntro image={work3} title="UniLink" description="Mid Fidelity UI/UX Design Project" color="#FFD1DC" rotate={rotateAmount} link="/unilink-ux" />
 					</div>
 				</div>
 			</main>
