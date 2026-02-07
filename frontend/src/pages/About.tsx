@@ -122,10 +122,7 @@ function About() {
 									<ExperienceCard
 										date="Technical"
 										heading="Media & Editing"
-										description={[
-											"Photography, Videography, DLSR Knowledge, Video Editing, Adobe Creative Suite (Photoshop, After Effects, Audition, Premiere Pro), Audacity.",
-											"Canva, Adobe Express, Indesign.",
-										]}
+										description={["Photography, Videography, Video Editing, Adobe Creative Suite (Photoshop, After Effects, Audition, Premiere Pro), Audacity.", "Canva, Adobe Express, Indesign."]}
 										color="#B0DB9C"
 									/>
 								</TextFade>
