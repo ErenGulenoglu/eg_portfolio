@@ -41,7 +41,10 @@ function UTMConnect() {
 								</p>
 							</TextFade>
 							<TextFade onetime={true}>
-								<Link to="https://www.figma.com/proto/teMuFPCoGhJtvikefERyNA/High-Fidelity-CCT305-Prototype---A4--Group-4?node-id=21-9217&starting-point-node-id=21%3A9217&t=LtSvDYEubpt7M2uI-1">
+								<Link
+									to="https://www.figma.com/proto/teMuFPCoGhJtvikefERyNA/High-Fidelity-CCT305-Prototype---A4--Group-4?node-id=21-9217&starting-point-node-id=21%3A9217&t=LtSvDYEubpt7M2uI-1"
+									target="_blank"
+								>
 									<button className="w-[10em] h-[3em] text-black text-lg font-semibold border border-black cursor-pointer rounded-4xl bg-white duration-320 hover:bg-[#8CA9FF] hover:text-white">
 										View Protype
 									</button>

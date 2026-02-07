@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function NavigationBar() {
 	return (
-		<div className="sticky top-0 flex w-full h-[10vh] justify-center items-center bg-background/75 backdrop-blur-sm">
+		<div className="sticky top-0 flex w-full h-[10vh] justify-center items-center bg-muted/75 backdrop-blur-sm">
 			<NavigationMenu>
 				<NavigationMenuList className="grid grid-cols-3 items-center justify-center w-full gap-14 roboto">
 					{/* Left */}
