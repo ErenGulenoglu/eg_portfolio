@@ -31,7 +31,7 @@ function UTMConnect() {
 					<TextFade onetime={true}>
 						<h1 className="w-fit text-5xl roboto font-light bg-[#7469B6] p-1 rounded-xs">UTM Connect</h1>
 					</TextFade>
-					<div className="flex flex-col w-full gap-4 items-end lg:gap-16 lg:flex-row">
+					<div className="flex flex-col w-full gap-4 items-start lg:gap-16 lg:flex-row">
 						<div className="flex flex-col w-full gap-6 lg:w-1/2">
 							<TextFade onetime={true}>
 								<p className="text-lg roboto font-mono">

@@ -5,6 +5,7 @@ import About from "./pages/About";
 import Portfolio from "./pages/Portfolio";
 import HML from "./pages/HML";
 import UniLink from "./pages/UniLink";
+import CinemaBookingUI from "./pages/CinemaBookingUI";
 
 import { ThemeProvider } from "./components/theme-provider";
 import ScrollToTop from "./components/ScrollToTop";
@@ -21,6 +22,7 @@ function App() {
 					<Route path="/portfolio" element={<Portfolio />} />
 					<Route path="/hazel-mccallion-ux" element={<HML />} />
 					<Route path="/unilink-ux" element={<UniLink />} />
+					<Route path="/cinema-booking-ui" element={<CinemaBookingUI />} />
 				</Routes>
 			</HashRouter>
 		</ThemeProvider>

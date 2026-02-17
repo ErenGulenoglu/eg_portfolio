@@ -7,6 +7,7 @@ import ProjectIntro from "@/components/ProjectIntro";
 import work1 from "../assets/CCT305/Utm305.png";
 import work2 from "../assets/CCT477/Utm477.jpg";
 import work3 from "../assets/CCT434/unilinkpreview.png";
+import work4 from "../assets/CinemaBookingUI/cinemabooking.png";
 
 import TextFade from "../components/animations/TextFade";
 
@@ -25,7 +26,7 @@ function Portfolio() {
 			<main className="flex flex-col justify-center items-center w-full">
 				<div className="flex flex-col w-[90vw] justify-center items-start my-8 lg:w-[80vw]">
 					<TextFade onetime={true}>
-						<h2 className="w-fit text-4xl roboto font-light bg-[#7469B6] p-1 rounded-xs mb-8">UI/UX Projects</h2>
+						<h2 className="w-fit text-4xl roboto font-light bg-[#7469B6] p-1 rounded-xs mb-8">UX Projects</h2>
 					</TextFade>
 					<div className="flex flex-col w-full justify-center items-center gap-16 lg:w-[80vw] lg:flex-row">
 						<ProjectIntro image={work1} title="UTM Connect" description="High Fidelity UX/UI Design Case Study" color="#FEEAC9" rotate={0} link="/utm-connect-ux" />
@@ -38,6 +39,14 @@ function Portfolio() {
 							link="/hazel-mccallion-ux"
 						/>
 						<ProjectIntro image={work3} title="UniLink" description="Mid Fidelity UI/UX Design Project" color="#FFD1DC" rotate={0} link="/unilink-ux" />
+					</div>
+					<div className="flex flex-col w-[90vw] justify-center items-start my-8 lg:w-[80vw]">
+						<TextFade onetime={true}>
+							<h2 className="w-fit text-4xl roboto font-light bg-[#7469B6] p-1 rounded-xs mb-8">UI Projects</h2>
+						</TextFade>
+						<div className="flex flex-col w-full justify-center items-center gap-16 lg:w-[80vw] lg:flex-row">
+							<ProjectIntro image={work4} title="Cinema Booking User Interface" description="UI Design Project" color="#C3B1E1" rotate={0} link="/cinema-booking-ui" />
+						</div>
 					</div>
 				</div>
 			</main>
