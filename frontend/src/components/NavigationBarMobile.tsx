@@ -31,7 +31,7 @@ function NavigationBarMobile() {
 									</SheetHeader>
 									<div className="grid flex-1 auto-rows-min gap-6 px-4">
 										<div className="grid gap-3">
-											<Link to="/">
+											<Link to="/about">
 												<Button variant="outline" className="w-full">
 													About
 												</Button>

@@ -313,15 +313,15 @@ function UTMConnect() {
 									Instead of creating multiple pages to handle registration logic, using components with variants simplifies the design process and makes the app easier for users to test and
 									understand.
 								</p>
-								<div className="flex flex-col gap-2">
+								<div className="flex flex-col gap-2 w-full">
 									<p className="text-lg roboto font-mono">Project reports:</p>
-									<a href="https://drive.google.com/file/d/1xden8ZXNIk3xrNCfQmPKFG7v_KbJXeLg/view?usp=sharing" target="_blank" className="text-blue-500 hover:underline">
+									<a href="https://drive.google.com/file/d/1xden8ZXNIk3xrNCfQmPKFG7v_KbJXeLg/view?usp=sharing" target="_blank" className="text-blue-500 hover:underline w-full">
 										https://drive.google.com/file/d/1xden8ZXNIk3xrNCfQmPKFG7v_KbJXeLg/view?usp=sharing
 									</a>
-									<a href="https://drive.google.com/file/d/1rCpbNGodfEz_1iGhx_lXwnqfcwzYbjyj/view?usp=sharing" target="_blank" className="text-blue-500 hover:underline">
+									<a href="https://drive.google.com/file/d/1rCpbNGodfEz_1iGhx_lXwnqfcwzYbjyj/view?usp=sharing" target="_blank" className="text-blue-500 hover:underline w-full">
 										https://drive.google.com/file/d/1rCpbNGodfEz_1iGhx_lXwnqfcwzYbjyj/view?usp=sharing
 									</a>
-									<a href="https://drive.google.com/file/d/1hr4G1ixyn6JtlQdtiv-HCMLapTN8rsYF/view?usp=sharing" target="_blank" className="text-blue-500 hover:underline">
+									<a href="https://drive.google.com/file/d/1hr4G1ixyn6JtlQdtiv-HCMLapTN8rsYF/view?usp=sharing" target="_blank" className="text-blue-500 hover:underline w-full">
 										https://drive.google.com/file/d/1hr4G1ixyn6JtlQdtiv-HCMLapTN8rsYF/view?usp=sharing
 									</a>
 								</div>
