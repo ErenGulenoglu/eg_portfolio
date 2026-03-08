@@ -36,7 +36,7 @@ function NavigationBarMobile() {
 							</Link>
 						</div>
 						<div className="grid gap-3">
-							<a href="https://drive.google.com/file/d/1nEDnslfksm6TJUyYXQQ62aJjkx8M8U4x/view" target="_blank" rel="noopener noreferrer">
+							<a href="https://drive.google.com/file/d/1FvPGERhikQVmeOl54xbbyEbzgOj9jygP/view?usp=sharing" target="_blank" rel="noopener noreferrer">
 								<Button className="w-full cursor-pointer" variant="outline">
 									Resume
 								</Button>
