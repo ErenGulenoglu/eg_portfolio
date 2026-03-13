@@ -66,6 +66,15 @@ function RotatedLabel({ children }: { children: string }): JSX.Element {
 	);
 }
 
+function HorizontalLabel({ children }: { children: string }): JSX.Element {
+	return (
+		<div className="flex flex-col gap-2 mb-3">
+			<span className="text-xs tracking-widest text-muted-foreground uppercase">{children}</span>
+			<div className="h-px bg-foreground w-full" />
+		</div>
+	);
+}
+
 function LinkedName({ label, href }: PastLink): JSX.Element {
 	return (
 		<a href={href} className="font-medium text-foreground underline underline-offset-2 hover:opacity-70 transition-opacity">
@@ -89,19 +98,17 @@ function NowCard({ title, desc, icon }: NowItem): JSX.Element {
 
 export default function AboutSection(): JSX.Element {
 	return (
-		<div className="grid grid-cols-2 gap-0 w-[57em] mb-4">
-			{/* Left */}
-			<div className="flex flex-col gap-4 pr-8">
-				<div className="flex flex-row gap-4">
-					<RotatedLabel>Who</RotatedLabel>
-					<div className="space-y-6 py-2">
-						<p className="text-sm leading-relaxed text-muted-foreground">Digital Designer. Shaping tech that increases productivity, grows economy and improves culture.</p>
-					</div>
+		<>
+			{/* Mobile */}
+			<div className="flex flex-col gap-8 px-4 lg:hidden">
+				<div className="flex flex-col">
+					<HorizontalLabel>Who</HorizontalLabel>
+					<p className="text-sm leading-relaxed text-muted-foreground">Digital Designer. Shaping tech that increases productivity, grows economy and improves culture.</p>
 				</div>
 
-				<div className="flex flex-row gap-4">
-					<RotatedLabel>Past</RotatedLabel>
-					<div className="space-y-6 py-2">
+				<div className="flex flex-col">
+					<HorizontalLabel>Past</HorizontalLabel>
+					<div className="space-y-4">
 						<p className="text-sm text-muted-foreground leading-relaxed">
 							Founder of <LinkedName label="Super Clear" href="#" />. Investor in <LinkedName label="Anthropic" href="#" />, <LinkedName label="Neuralink" href="#" />,{" "}
 							<LinkedName label="FigureAI" href="#" />, <LinkedName label="Phantom Space" href="#" />, <LinkedName label="Haply" href="#" /> and other Energy, AI, Robotics ideas.
@@ -112,17 +119,52 @@ export default function AboutSection(): JSX.Element {
 						</p>
 					</div>
 				</div>
-			</div>
 
-			{/* Right */}
-			<div className="flex flex-row gap-4 pl-8">
-				<RotatedLabel>Now</RotatedLabel>
-				<div className="space-y-6 py-2">
-					{nowItems.map((item) => (
-						<NowCard key={item.title} {...item} />
-					))}
+				<div className="flex flex-col">
+					<HorizontalLabel>Now</HorizontalLabel>
+					<div className="space-y-6">
+						{nowItems.map((item) => (
+							<NowCard key={item.title} {...item} />
+						))}
+					</div>
 				</div>
 			</div>
-		</div>
+
+			{/* Desktop */}
+			<div className="hidden lg:grid grid-cols-2 gap-0 w-[57em]">
+				{/* Left */}
+				<div className="flex flex-col gap-4 pr-8">
+					<div className="flex flex-row gap-4">
+						<RotatedLabel>Who</RotatedLabel>
+						<div className="space-y-6 py-2">
+							<p className="text-sm leading-relaxed text-muted-foreground">Digital Designer. Shaping tech that increases productivity, grows economy and improves culture.</p>
+						</div>
+					</div>
+					<div className="flex flex-row gap-4">
+						<RotatedLabel>Past</RotatedLabel>
+						<div className="space-y-6 py-2">
+							<p className="text-sm text-muted-foreground leading-relaxed">
+								Founder of <LinkedName label="Super Clear" href="#" />. Investor in <LinkedName label="Anthropic" href="#" />, <LinkedName label="Neuralink" href="#" />,{" "}
+								<LinkedName label="FigureAI" href="#" />, <LinkedName label="Phantom Space" href="#" />, <LinkedName label="Haply" href="#" /> and other Energy, AI, Robotics ideas.
+							</p>
+							<p className="text-sm text-muted-foreground leading-relaxed">
+								Launched products, projects, platforms and companies. Leading creative and product teams for consumer industry. Contributed to <LinkedName label="Grammarly" href="#" />,{" "}
+								<LinkedName label="Spark" href="#" />, <LinkedName label="Mistral" href="#" /> and hundreds of others.
+							</p>
+						</div>
+					</div>
+				</div>
+
+				{/* Right */}
+				<div className="flex flex-row gap-4 pl-8">
+					<RotatedLabel>Now</RotatedLabel>
+					<div className="space-y-6 py-2">
+						{nowItems.map((item) => (
+							<NowCard key={item.title} {...item} />
+						))}
+					</div>
+				</div>
+			</div>
+		</>
 	);
 }

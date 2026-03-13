@@ -1,6 +1,6 @@
 import { HashRouter, Route, Routes } from "react-router-dom";
-import Home from "./pages/Legacy/Home";
-// import Home from "./pages/Active/Home";
+// import Home from "./pages/Legacy/Home";
+import Home from "./pages/Active/Home";
 import UTMConnect from "./pages/Legacy/UTMConnect";
 import About from "./pages/Legacy/About";
 import Portfolio from "./pages/Legacy/Portfolio";
