@@ -1,15 +1,15 @@
 import { memo, useEffect } from "react";
 
-import NavigationBar from "@/components/NavigationBar";
-import NavigationBarMobile from "@/components/NavigationBarMobile";
-import Footer from "@/components/Footer";
-import ProjectIntro from "@/components/ProjectIntro";
-import work1 from "../assets/CCT305/Utm305.png";
-import work2 from "../assets/CCT477/Utm477.jpg";
-import work3 from "../assets/CCT434/unilinkpreview.png";
-import work4 from "../assets/CinemaBookingUI/cinemabooking.png";
+import NavigationBar from "@/components/Legacy/NavigationBar";
+import NavigationBarMobile from "@/components/Legacy/NavigationBarMobile";
+import Footer from "@/components/Legacy/Footer";
+import ProjectIntro from "@/components/Legacy/ProjectIntro";
+import work1 from "../../assets/CCT305/Utm305.png";
+import work2 from "../../assets/CCT477/Utm477.jpg";
+import work3 from "../../assets/CCT434/unilinkpreview.png";
+import work4 from "../../assets/CinemaBookingUI/cinemabooking.png";
 
-import TextFade from "../components/animations/TextFade";
+import TextFade from "../../components/animations/TextFade";
 
 function Portfolio() {
 	useEffect(() => {

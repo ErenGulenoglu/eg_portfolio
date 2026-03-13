@@ -1,12 +1,12 @@
-import NavigationBar from "@/components/NavigationBar";
-import NavigationBarMobile from "@/components/NavigationBarMobile";
-import Footer from "@/components/Footer";
-import ErenIntro from "@/components/ErenIntro";
-import ProjectIntro from "@/components/ProjectIntro";
+import NavigationBar from "@/components/Legacy/NavigationBar";
+import NavigationBarMobile from "@/components/Legacy/NavigationBarMobile";
+import Footer from "@/components/Legacy/Footer";
+import ErenIntro from "@/components/Legacy/ErenIntro";
+import ProjectIntro from "@/components/Legacy/ProjectIntro";
 
-import work1 from "../assets/CCT305/Utm305.png";
-import work2 from "../assets/CCT477/Utm477.jpg";
-import work3 from "../assets/CCT434/unilinkpreview.png";
+import work1 from "../../assets/CCT305/Utm305.png";
+import work2 from "../../assets/CCT477/Utm477.jpg";
+import work3 from "../../assets/CCT434/unilinkpreview.png";
 // import work2 from "../assets/Utm477.jpg";
 // import work3 from "../assets/Rosehammer.png";
 

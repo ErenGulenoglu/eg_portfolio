@@ -1,18 +1,18 @@
-import NavigationBar from "@/components/NavigationBar";
-import NavigationBarMobile from "@/components/NavigationBarMobile";
-import Footer from "@/components/Footer";
+import NavigationBar from "@/components/Legacy/NavigationBar";
+import NavigationBarMobile from "@/components/Legacy/NavigationBarMobile";
+import Footer from "@/components/Legacy/Footer";
 
 import { memo, useEffect } from "react";
 import { Link } from "react-router-dom";
 
-import TextFade from "../components/animations/TextFade";
+import TextFade from "../../components/animations/TextFade";
 
-import preview305 from "../assets/CCT305/preview_305.png";
-import lowfid305 from "../assets/CCT305/305_low-fidelity.jpg";
-import lowmidfid305 from "../assets/CCT305/305midfidelity.png";
-import highfid305 from "../assets/CCT305/305high-fid.png";
-import persona305 from "../assets/CCT305/305Persona.jpg";
-import prioritizationgrid305 from "../assets/CCT305/305Prioritization.jpg";
+import preview305 from "../../assets/CCT305/preview_305.png";
+import lowfid305 from "../../assets/CCT305/305_low-fidelity.jpg";
+import lowmidfid305 from "../../assets/CCT305/305midfidelity.png";
+import highfid305 from "../../assets/CCT305/305high-fid.png";
+import persona305 from "../../assets/CCT305/305Persona.jpg";
+import prioritizationgrid305 from "../../assets/CCT305/305Prioritization.jpg";
 
 function UTMConnect() {
 	useEffect(() => {

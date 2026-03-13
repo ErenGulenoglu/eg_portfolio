@@ -1,17 +1,17 @@
-import NavigationBar from "../components/NavigationBar";
-import NavigationBarMobile from "../components/NavigationBarMobile";
-import Footer from "../components/Footer";
+import NavigationBar from "../../components/Legacy/NavigationBar";
+import NavigationBarMobile from "../../components/Legacy/NavigationBarMobile";
+import Footer from "../../components/Legacy/Footer";
 
 import { memo, useEffect } from "react";
 import { Link } from "react-router-dom";
 
-import TextFade from "../components/animations/TextFade";
+import TextFade from "../../components/animations/TextFade";
 
-import unilinkpreview from "../assets/CCT434/unilinkpreview.png";
-import persona1 from "../assets/CCT434/persona1.jpeg";
-import persona2 from "../assets/CCT434/persona2.jpeg";
-import userjourney from "../assets/CCT434/user_journey.jpg";
-import finaldesign from "../assets/CCT434/finaldesign.png";
+import unilinkpreview from "../../assets/CCT434/unilinkpreview.png";
+import persona1 from "../../assets/CCT434/persona1.jpeg";
+import persona2 from "../../assets/CCT434/persona2.jpeg";
+import userjourney from "../../assets/CCT434/user_journey.jpg";
+import finaldesign from "../../assets/CCT434/finaldesign.png";
 
 function UniLink() {
 	useEffect(() => {

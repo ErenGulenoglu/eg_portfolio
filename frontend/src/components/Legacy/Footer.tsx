@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 function Footer() {
 	return (
-		<div className="flex w-full justify-center items-center bg-muted">
+		<div className="flex w-full justify-center items-center bg-background">
 			<p className="w-[75%] text-sm text-center py-8">
 				Built by{" "}
 				<Link className="font-bold underline" to="https://www.linkedin.com/in/eren-gulenoglu-95690627b/">

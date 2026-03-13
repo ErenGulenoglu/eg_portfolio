@@ -1,11 +1,11 @@
-import NavigationBar from "@/components/NavigationBar";
-import NavigationBarMobile from "@/components/NavigationBarMobile";
-import Footer from "@/components/Footer";
+import NavigationBar from "@/components/Legacy/NavigationBar";
+import NavigationBarMobile from "@/components/Legacy/NavigationBarMobile";
+import Footer from "@/components/Legacy/Footer";
 
-import TextFade from "../components/animations/TextFade";
+import TextFade from "../../components/animations/TextFade";
 
-import ExperienceCard from "../components/ExperienceCard";
-import ExperienceCardAlternative from "../components/ExperienceCardAlternative";
+import ExperienceCard from "../../components/Legacy/ExperienceCard";
+import ExperienceCardAlternative from "../../components/Legacy/ExperienceCardAlternative";
 
 import { memo, useEffect } from "react";
 

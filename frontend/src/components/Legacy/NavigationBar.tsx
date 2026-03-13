@@ -1,9 +1,9 @@
-import { NavigationMenu, NavigationMenuItem, NavigationMenuList, NavigationMenuLink } from "../components/ui/navigation-menu";
+import { NavigationMenu, NavigationMenuItem, NavigationMenuList, NavigationMenuLink } from "../ui/navigation-menu";
 import { Link } from "react-router-dom";
 
 function NavigationBar() {
 	return (
-		<div className="sticky top-0 flex w-full justify-center items-center bg-muted/75 backdrop-blur-sm">
+		<div className="sticky top-0 flex w-full justify-center items-center bg-background backdrop-blur-sm">
 			<NavigationMenu className="my-4 w-full">
 				<NavigationMenuList className="grid grid-cols-3 items-center justify-center w-full gap-14 roboto">
 					{/* Left */}

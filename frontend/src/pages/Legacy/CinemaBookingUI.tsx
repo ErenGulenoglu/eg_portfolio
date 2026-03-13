@@ -1,9 +1,9 @@
-import NavigationBar from "../components/NavigationBar";
-import NavigationBarMobile from "../components/NavigationBarMobile";
-import Footer from "../components/Footer";
+import NavigationBar from "../../components/Legacy/NavigationBar";
+import NavigationBarMobile from "../../components/Legacy/NavigationBarMobile";
+import Footer from "../../components/Legacy/Footer";
 
-import TextFade from "../components/animations/TextFade";
-import work4 from "../assets/CinemaBookingUI/cinemabooking.png";
+import TextFade from "../../components/animations/TextFade";
+import work4 from "../../assets/CinemaBookingUI/cinemabooking.png";
 
 import { Link } from "react-router-dom";
 

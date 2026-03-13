@@ -1,11 +1,12 @@
 import { HashRouter, Route, Routes } from "react-router-dom";
-import Home from "./pages/Home";
-import UTMConnect from "./pages/UTMConnect";
-import About from "./pages/About";
-import Portfolio from "./pages/Portfolio";
-import HML from "./pages/HML";
-import UniLink from "./pages/UniLink";
-import CinemaBookingUI from "./pages/CinemaBookingUI";
+import Home from "./pages/Legacy/Home";
+// import Home from "./pages/Active/Home";
+import UTMConnect from "./pages/Legacy/UTMConnect";
+import About from "./pages/Legacy/About";
+import Portfolio from "./pages/Legacy/Portfolio";
+import HML from "./pages/Legacy/HML";
+import UniLink from "./pages/Legacy/UniLink";
+import CinemaBookingUI from "./pages/Legacy/CinemaBookingUI";
 
 import { ThemeProvider } from "./components/theme-provider";
 import ScrollToTop from "./components/ScrollToTop";

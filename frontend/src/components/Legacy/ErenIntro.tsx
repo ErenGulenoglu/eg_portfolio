@@ -1,6 +1,6 @@
-import linkedin from "../assets/linkedin.png";
-import { TypingEffect } from "./animations/typing-effect";
-import TextFade from "./animations/TextFade";
+import linkedin from "../../assets/linkedin.png";
+import { TypingEffect } from ".././animations/typing-effect";
+import TextFade from ".././animations/TextFade";
 
 import { memo } from "react";
 import { Link } from "react-router-dom";
