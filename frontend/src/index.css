@@ -141,15 +141,21 @@
 		@apply border-border outline-ring/50;
 		font-family: "Nunito", sans-serif;
 	}
-	header,
-	header * {
-		font-family: "Nunito", sans-serif;
-	}
 	html,
 	body {
 		overscroll-behavior: none;
 		margin: 0;
 		padding: 0;
+		::selection {
+			background-color: #dcdcdc;
+			color: black;
+		}
+
+		/* For Firefox support */
+		::-moz-selection {
+			background-color: #dcdcdc;
+			color: black;
+		}
 	}
 	body {
 		@apply bg-background text-foreground;
