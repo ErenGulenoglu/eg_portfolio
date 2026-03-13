@@ -28,7 +28,7 @@ function Portfolio() {
 					<TextFade onetime={true}>
 						<h2 className="w-fit text-4xl roboto font-light bg-[#7469B6] p-1 rounded-xs mb-8">UX Projects</h2>
 					</TextFade>
-					<div className="flex flex-col w-full justify-center items-center gap-16 lg:w-[80vw] lg:flex-row">
+					<div className="flex flex-col w-full justify-center items-center gap-16 lg:w-[80vw] lg:flex-row lg:flex-wrap">
 						<ProjectIntro image={work1} title="UTM Connect" description="High Fidelity UX/UI Design Case Study" color="#FEEAC9" rotate={0} link="/utm-connect-ux" />
 						<ProjectIntro
 							image={work2}

@@ -21,7 +21,7 @@ function ProjectIntro({
 	const [isHovered, setIsHovered] = useState(false);
 	return (
 		<div
-			className={`flex flex-col w-full text-center justify-center items-center border border-black rounded-lg gap-4 rotate-[${rotate}deg] lg:w-[24em] ${className}`}
+			className={`flex flex-col w-full text-center justify-center items-center border border-black rounded-lg gap-4 rotate-[${rotate}deg] sm:w-[32em] md:w-[32em] lg:w-[24em] ${className}`}
 			style={{
 				backgroundColor: color,
 				transform: isHovered ? `rotate(0deg)` : `rotate(${rotate}deg)`, // Apply rotation on hover

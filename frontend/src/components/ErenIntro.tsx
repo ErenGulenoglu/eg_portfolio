@@ -9,7 +9,7 @@ function ErenIntro() {
 	return (
 		<div className="flex flex-col justify-center items-center w-[80vw] py-[5vh] gap-[5vw] mt-8 lg:flex-row lg:items-stretch">
 			<div className="flex w-full justify-center items-center lg:w-1/2">
-				<img src={linkedin} alt="Eren Gulenoglu" className="w-3/4 aspect-square rounded-full object-cover border border-foreground 2xl:w-1/2" />
+				<img src={linkedin} alt="Eren Gulenoglu" className="w-3/4 aspect-square rounded-full object-cover border border-foreground sm:w-1/2 lg:w-3/4 2xl:w-1/2" />
 			</div>
 			<div className="flex flex-col w-full border-t-2 border-foreground justify-start items-start py-[2vh] lg:w-1/2">
 				<h1 className="text-4xl roboto font-medium text-[#7469B6]">

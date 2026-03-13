@@ -5,8 +5,8 @@ import { Link } from "react-router-dom";
 
 function NavigationBarMobile() {
 	return (
-		<div className="sticky top-0 flex w-full items-center justify-between px-[8vw] py-6 bg-muted/75 backdrop-blur-sm">
-			<Link to="/" className="text-2xl font-bold text-[#7469B6] py-2">
+		<div className="sticky top-0 flex w-full items-center justify-between px-[8vw] py-8 bg-muted/75 backdrop-blur-sm">
+			<Link to="/" className="text-2xl font-bold text-[#7469B6]">
 				Eren Gulenoglu
 			</Link>
 
