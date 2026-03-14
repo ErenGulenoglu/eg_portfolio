@@ -1,25 +1,25 @@
 import { memo, useEffect, type JSX } from "react";
-import { Link } from "react-router";
 import NavigationBar from "../../components/Active/NavigationBar";
 
 import work4 from "../../assets/CinemaBookingUI/cinemabooking.png";
+import ButtonProt from "../../components/ButtonProt";
 
-function HorizontalLabel({ children }: { children: string }): JSX.Element {
+function RotatedLabel({ children }: { children: string }): JSX.Element {
 	return (
-		<div className="flex flex-col gap-2 mb-3">
-			<span className="text-xs tracking-widest text-muted-foreground uppercase">{children}</span>
-			<div className="h-px bg-foreground w-full" />
+		<div className="flex flex-row items-start gap-2 self-stretch">
+			<span className="text-xs tracking-widest text-portal uppercase sticky top-10" style={{ writingMode: "vertical-rl", transform: "rotate(180deg)" }}>
+				{children}
+			</span>
+			<div className="w-px bg-portal self-stretch" />
 		</div>
 	);
 }
 
-function RotatedLabel({ children }: { children: string }): JSX.Element {
+function HorizontalLabel({ children }: { children: string }): JSX.Element {
 	return (
-		<div className="flex flex-row items-start gap-2 self-stretch shrink-0">
-			<span className="text-xs tracking-widest text-muted-foreground uppercase sticky top-10" style={{ writingMode: "vertical-rl", transform: "rotate(180deg)" }}>
-				{children}
-			</span>
-			<div className="w-px bg-foreground self-stretch" />
+		<div className="flex flex-col gap-2 mb-3">
+			<span className="text-xs tracking-widest text-portal uppercase">{children}</span>
+			<div className="h-px bg-portal w-full" />
 		</div>
 	);
 }
@@ -42,13 +42,12 @@ function CinemaBookingUI() {
 							A Figma UI design exercise built by following tutorials to strengthen core design skills. The project covers linear gradients, frames and groups for layout and spacing, original shape
 							creation with the Bend tool, and integrating plugins and design kits into the workflow.
 						</p>
-						<Link
-							to="https://www.figma.com/design/CRpyDi99kyQcW7WqSDmKXy/Cinema-Booking-App?node-id=0-1&t=6kpPb9y8G3bODYsZ-1"
+						<ButtonProt
+							extension="https://www.figma.com/design/CRpyDi99kyQcW7WqSDmKXy/Cinema-Booking-App?node-id=0-1&t=6kpPb9y8G3bODYsZ-1"
+							buttonText="View Prototype"
+							className="w-32 h-10"
 							target="_blank"
-							className="flex justify-center items-center bg-foreground text-background w-30 h-10 text-sm hover:opacity-80 transition-opacity cursor-pointer"
-						>
-							<span className="text-md">View Design ↗</span>
-						</Link>
+						/>
 					</div>
 
 					{/* ── Preview ── */}

@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 function NavigationBar({ className }: { className?: string }) {
 	return (
-		<header className={`top-0 flex flex-row w-full justify-between items-center px-8 bg-foreground lg:w-[57em] ${className}`}>
+		<header className={`top-0 flex flex-row w-full justify-between items-center px-8 bg-foreground lg:rounded-b-lg lg:w-[57em] ${className}`}>
 			<Link to="/">
 				<span className="text-portal border-b border-current selection:bg-[#330e00] selection:text-[#f54100] selection:font-bold">Eren Gulenoglu</span>
 			</Link>

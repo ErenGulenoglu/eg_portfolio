@@ -1,5 +1,4 @@
 import { memo, useEffect, type JSX } from "react";
-import { Link } from "react-router";
 import NavigationBar from "../../components/Active/NavigationBar";
 
 import preview305 from "../../assets/CCT305/preview_305.png";
@@ -9,13 +8,15 @@ import highfid305 from "../../assets/CCT305/305high-fid.png";
 import persona305 from "../../assets/CCT305/305Persona.jpg";
 import prioritizationgrid305 from "../../assets/CCT305/305Prioritization.jpg";
 
+import ButtonProt from "../../components/ButtonProt";
+
 function RotatedLabel({ children }: { children: string }): JSX.Element {
 	return (
-		<div className="flex flex-row items-start gap-2 self-stretch shrink-0">
-			<span className="text-xs tracking-widest text-muted-foreground uppercase sticky top-10" style={{ writingMode: "vertical-rl", transform: "rotate(180deg)" }}>
+		<div className="flex flex-row items-start gap-2 self-stretch">
+			<span className="text-xs tracking-widest text-portal uppercase sticky top-10" style={{ writingMode: "vertical-rl", transform: "rotate(180deg)" }}>
 				{children}
 			</span>
-			<div className="w-px bg-foreground self-stretch" />
+			<div className="w-px bg-portal self-stretch" />
 		</div>
 	);
 }
@@ -23,8 +24,8 @@ function RotatedLabel({ children }: { children: string }): JSX.Element {
 function HorizontalLabel({ children }: { children: string }): JSX.Element {
 	return (
 		<div className="flex flex-col gap-2 mb-3">
-			<span className="text-xs tracking-widest text-muted-foreground uppercase">{children}</span>
-			<div className="h-px bg-foreground w-full" />
+			<span className="text-xs tracking-widest text-portal uppercase">{children}</span>
+			<div className="h-px bg-portal w-full" />
 		</div>
 	);
 }
@@ -57,13 +58,12 @@ function UTMConnect() {
 							iterative prototyping, the project addresses common challenges such as scattered club information, low engagement, and difficulty balancing academic and social life. The final design
 							emphasises clarity, accessibility, and familiar social interactions to support meaningful participation in campus life.
 						</p>
-						<Link
-							to="https://www.figma.com/proto/teMuFPCoGhJtvikefERyNA/High-Fidelity-CCT305-Prototype---A4--Group-4?node-id=21-9217&starting-point-node-id=21%3A9217&t=LtSvDYEubpt7M2uI-1"
+						<ButtonProt
+							extension="https://www.figma.com/proto/teMuFPCoGhJtvikefERyNA/High-Fidelity-CCT305-Prototype---A4--Group-4?node-id=21-9217&starting-point-node-id=21%3A9217&t=LtSvDYEubpt7M2uI-1"
+							buttonText="View Prototype"
+							className="w-32 h-10"
 							target="_blank"
-							className="flex justify-center items-center bg-foreground text-background w-30 h-10 text-sm hover:opacity-80 transition-opacity cursor-pointer"
-						>
-							<span className="text-md">View Prototype</span>
-						</Link>
+						/>
 					</div>
 
 					{/* ── Meta + Contents ── */}

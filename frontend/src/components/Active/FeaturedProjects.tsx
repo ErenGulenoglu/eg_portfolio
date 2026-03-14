@@ -1,8 +1,9 @@
 import type { JSX } from "react";
-import { Link } from "react-router";
 import utmconnect_image from "../../assets/CCT305/preview_305.png";
 import hazelux_image from "../../assets/CCT477/Utm477.jpg";
 import unilink_image from "../../assets/CCT434/unilinkpreview.png";
+
+import ButtonProt from "../ButtonProt";
 
 function RotatedLabel({ children }: { children: string }): JSX.Element {
 	return (
@@ -30,11 +31,7 @@ export default function ProjectsSection(): JSX.Element {
 			{/* Mobile */}
 			<div className="flex flex-col gap-8 px-4 mb-8 lg:hidden">
 				<div className="w-full flex justify-center items-center">
-					<Link to="/portfolio">
-						<button className="bg-foreground text-white hover:cursor-pointer px-4 py-2">
-							<span className="">See Full Portfolio</span>
-						</button>
-					</Link>
+					<ButtonProt extension="/portfolio" buttonText="See Full Portfolio" className="w-40 h-10" />
 				</div>
 				<div className="flex flex-col gap-10">
 					<HorizontalLabel>Featured Works</HorizontalLabel>
@@ -53,9 +50,7 @@ export default function ProjectsSection(): JSX.Element {
 						<p>
 							<strong>Tools:</strong> Figma, Miro
 						</p>
-						<Link to="/utm-connect-ux" className="flex bg-foreground text-white hover:cursor-pointer w-28 h-10 text-center items-center justify-center">
-							<span>View Project</span>
-						</Link>
+						<ButtonProt extension="/utm-connect-ux" buttonText="View Project" className="w-28 h-10" />
 					</div>
 
 					<div className="h-px bg-muted-portal w-full" />
@@ -74,9 +69,7 @@ export default function ProjectsSection(): JSX.Element {
 						<p>
 							<strong>Tools:</strong> Miro, Canva
 						</p>
-						<Link to="/hazel-mccallion-ux" className="flex bg-foreground text-white hover:cursor-pointer w-28 h-10 text-center items-center justify-center">
-							<span>View Project</span>
-						</Link>
+						<ButtonProt extension="/hazel-mccallion-ux" buttonText="View Project" className="w-28 h-10" />
 					</div>
 
 					<div className="h-px bg-muted-portal w-full" />
@@ -96,9 +89,7 @@ export default function ProjectsSection(): JSX.Element {
 						<p>
 							<strong>Tools:</strong> Adobe XD
 						</p>
-						<Link to="/unilink-ux" className="flex bg-foreground text-white hover:cursor-pointer w-28 h-10 text-center items-center justify-center">
-							<span>View Project</span>
-						</Link>
+						<ButtonProt extension="/unilink-ux" buttonText="View Project" className="w-28 h-10" />
 					</div>
 				</div>
 			</div>
@@ -110,11 +101,7 @@ export default function ProjectsSection(): JSX.Element {
 
 					<div className="flex flex-col gap-12 w-full">
 						<div className="w-full flex justify-center items-center">
-							<Link to="/portfolio">
-								<button className="bg-foreground text-white hover:cursor-pointer px-4 py-2">
-									<span className="">See Full Portfolio</span>
-								</button>
-							</Link>
+							<ButtonProt extension="/portfolio" buttonText="See Full Portfolio" className="w-40 h-10" />
 						</div>
 						{/* Project 1 */}
 						<div className="flex flex-col gap-4 w-full">
@@ -129,9 +116,7 @@ export default function ProjectsSection(): JSX.Element {
 									<p>
 										<strong>Tools:</strong> Figma, Miro
 									</p>
-									<Link to="/utm-connect-ux" className="flex bg-foreground text-white hover:cursor-pointer w-28 h-10 text-center items-center justify-center">
-										<span>View Project</span>
-									</Link>
+									<ButtonProt extension="/utm-connect-ux" buttonText="View Project" />
 								</div>
 								<div className="w-[50%] h-[16em] rounded-sm overflow-hidden border border-black">
 									<img src={utmconnect_image} alt="UTM Connect" className="w-full h-full object-cover object-center" />
@@ -152,9 +137,7 @@ export default function ProjectsSection(): JSX.Element {
 									<p>
 										<strong>Tools:</strong> Miro, Canva
 									</p>
-									<Link to="/hazel-mccallion-ux" className="flex bg-foreground text-white hover:cursor-pointer w-28 h-10 text-center items-center justify-center">
-										<span>View Project</span>
-									</Link>
+									<ButtonProt extension="/hazel-mccallion-ux" buttonText="View Project" />
 								</div>
 								<div className="w-[50%] h-[16em] rounded-sm overflow-hidden border border-black">
 									<img src={hazelux_image} alt="Mississauga Library UX Research" className="w-full h-full object-cover object-center" />
@@ -176,9 +159,7 @@ export default function ProjectsSection(): JSX.Element {
 									<p>
 										<strong>Tools:</strong> Adobe XD
 									</p>
-									<Link to="/unilink-ux" className="flex bg-foreground text-white hover:cursor-pointer w-28 h-10 text-center items-center justify-center">
-										<span>View Project</span>
-									</Link>
+									<ButtonProt extension="/unilink-ux" buttonText="View Project" />
 								</div>
 								<div className="w-[50%] h-[16em] rounded-sm overflow-hidden border border-black">
 									<img src={unilink_image} alt="UniLink" className="w-full h-full object-cover object-center" />

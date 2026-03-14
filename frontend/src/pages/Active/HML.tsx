@@ -4,13 +4,15 @@ import NavigationBar from "../../components/Active/NavigationBar";
 import preview477 from "../../assets/CCT477/Utm477.jpg";
 import flow477 from "../../assets/CCT477/FlowModel477.png";
 
+import ButtonProt from "../../components/ButtonProt";
+
 function RotatedLabel({ children }: { children: string }): JSX.Element {
 	return (
-		<div className="flex flex-row items-start gap-2 self-stretch shrink-0">
-			<span className="text-xs tracking-widest text-muted-foreground uppercase sticky top-10" style={{ writingMode: "vertical-rl", transform: "rotate(180deg)" }}>
+		<div className="flex flex-row items-start gap-2 self-stretch">
+			<span className="text-xs tracking-widest text-portal uppercase sticky top-10" style={{ writingMode: "vertical-rl", transform: "rotate(180deg)" }}>
 				{children}
 			</span>
-			<div className="w-px bg-foreground self-stretch" />
+			<div className="w-px bg-portal self-stretch" />
 		</div>
 	);
 }
@@ -18,8 +20,8 @@ function RotatedLabel({ children }: { children: string }): JSX.Element {
 function HorizontalLabel({ children }: { children: string }): JSX.Element {
 	return (
 		<div className="flex flex-col gap-2 mb-3">
-			<span className="text-xs tracking-widest text-muted-foreground uppercase">{children}</span>
-			<div className="h-px bg-foreground w-full" />
+			<span className="text-xs tracking-widest text-portal uppercase">{children}</span>
+			<div className="h-px bg-portal w-full" />
 		</div>
 	);
 }
@@ -52,14 +54,7 @@ function HML() {
 							wait times shape user frustration. Using Contextual Inquiry and Participatory Design, the research revealed key breakdowns in the workflow — including conflicting information, limited
 							user control, and invisible print queues — and explored how increased transparency and user-centered planning could improve access to public makerspaces.
 						</p>
-						<a
-							href="https://www.linkedin.com/feed/update/urn:li:activity:7402815181472354304/"
-							target="_blank"
-							rel="noreferrer"
-							className="flex justify-center items-center bg-foreground text-background w-38 h-10 text-sm hover:opacity-80 transition-opacity cursor-pointer"
-						>
-							<span className="text-md">View LinkedIn Post</span>
-						</a>
+						<ButtonProt extension="https://www.linkedin.com/feed/update/urn:li:activity:7402815181472354304/" buttonText="View LinkedIn Post" className="w-38 h-10" target="_blank" />
 					</div>
 
 					{/* ── Meta + Contents ── */}

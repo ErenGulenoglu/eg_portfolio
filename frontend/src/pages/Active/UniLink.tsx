@@ -1,5 +1,4 @@
 import { memo, useEffect, type JSX } from "react";
-import { Link } from "react-router";
 import NavigationBar from "../../components/Active/NavigationBar";
 
 import unilinkpreview from "../../assets/CCT434/unilinkpreview.png";
@@ -8,13 +7,15 @@ import persona2 from "../../assets/CCT434/persona2.jpeg";
 import userjourney from "../../assets/CCT434/user_journey.jpg";
 import finaldesign from "../../assets/CCT434/finaldesign.png";
 
+import ButtonProt from "../../components/ButtonProt";
+
 function RotatedLabel({ children }: { children: string }): JSX.Element {
 	return (
-		<div className="flex flex-row items-start gap-2 self-stretch shrink-0">
-			<span className="text-xs tracking-widest text-muted-foreground uppercase sticky top-10" style={{ writingMode: "vertical-rl", transform: "rotate(180deg)" }}>
+		<div className="flex flex-row items-start gap-2 self-stretch">
+			<span className="text-xs tracking-widest text-portal uppercase sticky top-10" style={{ writingMode: "vertical-rl", transform: "rotate(180deg)" }}>
 				{children}
 			</span>
-			<div className="w-px bg-foreground self-stretch" />
+			<div className="w-px bg-portal self-stretch" />
 		</div>
 	);
 }
@@ -22,8 +23,8 @@ function RotatedLabel({ children }: { children: string }): JSX.Element {
 function HorizontalLabel({ children }: { children: string }): JSX.Element {
 	return (
 		<div className="flex flex-col gap-2 mb-3">
-			<span className="text-xs tracking-widest text-muted-foreground uppercase">{children}</span>
-			<div className="h-px bg-foreground w-full" />
+			<span className="text-xs tracking-widest text-portal uppercase">{children}</span>
+			<div className="h-px bg-portal w-full" />
 		</div>
 	);
 }
@@ -56,13 +57,7 @@ function UniLink() {
 							credentials, the app ensures all users are real students while focusing on interest-based and academic matching rather than superficial swiping. Designed with an intuitive interface and
 							low-pressure interactions, UniLink encourages authentic connections, in-person meetups, and cross-cultural communication.
 						</p>
-						<Link
-							to="https://xd.adobe.com/view/39ef1ea5-a52b-49cf-8a4b-35befa622f20-6cbc/?fullscreen&hints=off"
-							target="_blank"
-							className="flex justify-center items-center bg-foreground text-background w-30 h-10 text-sm hover:opacity-80 transition-opacity cursor-pointer"
-						>
-							<span className="text-md">View Prototype</span>
-						</Link>
+						<ButtonProt extension="https://xd.adobe.com/view/39ef1ea5-a52b-49cf-8a4b-35befa622f20-6cbc/?fullscreen&hints=off" buttonText="View Prototype" className="w-32 h-10" target="_blank" />
 					</div>
 
 					{/* ── Meta + Contents ── */}

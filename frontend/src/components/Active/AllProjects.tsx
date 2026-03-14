@@ -5,6 +5,8 @@ import hazelux_image from "../../assets/CCT477/Utm477.jpg";
 import unilink_image from "../../assets/CCT434/unilinkpreview.png";
 import cinameapp_image from "../../assets/CinemaBookingUI/cinemabooking.png";
 
+import ButtonProt from "../ButtonProt";
+
 function RotatedLabel({ children }: { children: string }): JSX.Element {
 	return (
 		<div className="flex flex-row items-start gap-2 self-stretch">
@@ -47,9 +49,7 @@ export default function ProjectsSection(): JSX.Element {
 						<p>
 							<strong>Tools:</strong> Figma, Miro
 						</p>
-						<Link to="/utm-connect-ux" className="flex bg-foreground text-white hover:cursor-pointer w-28 h-10 text-center items-center justify-center">
-							<span>View Project</span>
-						</Link>
+						<ButtonProt extension="/utm-connect-ux" buttonText="View Project" className="w-28 h-10" />
 					</div>
 
 					<div className="h-px bg-foreground/20 w-full" />
@@ -68,9 +68,7 @@ export default function ProjectsSection(): JSX.Element {
 						<p>
 							<strong>Tools:</strong> Miro, Canva
 						</p>
-						<Link to="/hazel-mccallion-ux" className="flex bg-foreground text-white hover:cursor-pointer w-28 h-10 text-center items-center justify-center">
-							<span>View Project</span>
-						</Link>
+						<ButtonProt extension="/hazel-mccallion-ux" buttonText="View Project" className="w-28 h-10" />
 					</div>
 
 					<div className="h-px bg-foreground/20 w-full" />
@@ -90,9 +88,7 @@ export default function ProjectsSection(): JSX.Element {
 						<p>
 							<strong>Tools:</strong> Adobe XD
 						</p>
-						<Link to="/unilink-ux" className="flex bg-foreground text-white hover:cursor-pointer w-28 h-10 text-center items-center justify-center">
-							<span>View Project</span>
-						</Link>
+						<ButtonProt extension="/unilink-ux" buttonText="View Project" className="w-28 h-10" />
 					</div>
 
 					<div className="h-px bg-foreground/20 w-full" />
@@ -110,9 +106,7 @@ export default function ProjectsSection(): JSX.Element {
 						<p>
 							<strong>Tools:</strong> Figma
 						</p>
-						<Link to="/cinema-booking-ui" className="flex bg-foreground text-white hover:cursor-pointer w-28 h-10 text-center items-center justify-center">
-							<span>View Project</span>
-						</Link>
+						<ButtonProt extension="/cinema-booking-ui" buttonText="View Project" className="w-28 h-10" />
 					</div>
 				</div>
 			</div>
@@ -136,9 +130,7 @@ export default function ProjectsSection(): JSX.Element {
 									<p>
 										<strong>Tools:</strong> Figma, Miro
 									</p>
-									<Link to="/utm-connect-ux" className="flex bg-foreground text-white hover:cursor-pointer w-28 h-10 text-center items-center justify-center">
-										<span>View Project</span>
-									</Link>
+									<ButtonProt extension="/utm-connect-ux" buttonText="View Project" />
 								</div>
 								<div className="w-[50%] h-[16em] rounded-sm overflow-hidden border border-black">
 									<img src={utmconnect_image} alt="UTM Connect" className="w-full h-full object-cover object-center" />
@@ -159,9 +151,7 @@ export default function ProjectsSection(): JSX.Element {
 									<p>
 										<strong>Tools:</strong> Miro, Canva
 									</p>
-									<Link to="/hazel-mccallion-ux" className="flex bg-foreground text-white hover:cursor-pointer w-28 h-10 text-center items-center justify-center">
-										<span>View Project</span>
-									</Link>
+									<ButtonProt extension="/hazel-mccallion-ux" buttonText="View Project" />
 								</div>
 								<div className="w-[50%] h-[16em] rounded-sm overflow-hidden border border-black">
 									<img src={hazelux_image} alt="Mississauga Library UX Research" className="w-full h-full object-cover object-center" />
@@ -183,9 +173,7 @@ export default function ProjectsSection(): JSX.Element {
 									<p>
 										<strong>Tools:</strong> Adobe XD
 									</p>
-									<Link to="/unilink-ux" className="flex bg-foreground text-white hover:cursor-pointer w-28 h-10 text-center items-center justify-center">
-										<span>View Project</span>
-									</Link>
+									<ButtonProt extension="/unilink-ux" buttonText="View Project" />
 								</div>
 								<div className="w-[50%] h-[16em] rounded-sm overflow-hidden border border-black">
 									<img src={unilink_image} alt="UniLink" className="w-full h-full object-cover object-center" />
@@ -205,9 +193,7 @@ export default function ProjectsSection(): JSX.Element {
 									<p>
 										<strong>Tools:</strong> Figma
 									</p>
-									<Link to="/cinema-booking-ui" className="flex bg-foreground text-white hover:cursor-pointer w-28 h-10 text-center items-center justify-center">
-										<span>View Project</span>
-									</Link>
+									<ButtonProt extension="/cinema-booking-ui" buttonText="View Project" />
 								</div>
 								<div className="w-[50%] h-[16em] rounded-sm overflow-hidden border border-black">
 									<img src={cinameapp_image} alt="Cinema Booking App" className="w-full h-full object-cover object-center" />
