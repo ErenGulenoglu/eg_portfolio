@@ -8,10 +8,10 @@ import cinameapp_image from "../../assets/CinemaBookingUI/cinemabooking.png";
 function RotatedLabel({ children }: { children: string }): JSX.Element {
 	return (
 		<div className="flex flex-row items-start gap-2 self-stretch">
-			<span className="text-xs tracking-widest text-muted-foreground uppercase sticky top-10" style={{ writingMode: "vertical-rl", transform: "rotate(180deg)" }}>
+			<span className="text-xs tracking-widest text-portal uppercase sticky top-10" style={{ writingMode: "vertical-rl", transform: "rotate(180deg)" }}>
 				{children}
 			</span>
-			<div className="w-px bg-foreground self-stretch" />
+			<div className="w-px bg-portal self-stretch" />
 		</div>
 	);
 }
@@ -19,8 +19,8 @@ function RotatedLabel({ children }: { children: string }): JSX.Element {
 function HorizontalLabel({ children }: { children: string }): JSX.Element {
 	return (
 		<div className="flex flex-col gap-2 mb-3">
-			<span className="text-xs tracking-widest text-muted-foreground uppercase">{children}</span>
-			<div className="h-px bg-foreground w-full" />
+			<span className="text-xs tracking-widest text-portal uppercase">{children}</span>
+			<div className="h-px bg-portal w-full" />
 		</div>
 	);
 }

@@ -10,8 +10,8 @@ const SEGMENTS = 16;
 const GRAVITY = 0.45;
 const DAMPING = 0.965;
 const ITERATIONS = 8;
-const ROPE_COLOR = "#EF9F27";
-const HIGHLIGHT_BG = "#EF9F27";
+const ROPE_COLOR = "#ff9a00";
+const HIGHLIGHT_BG = "#ff9a00";
 const HIGHLIGHT_TEXT = "#fff";
 const SLACK = 1.25;
 
@@ -137,10 +137,10 @@ function clearHighlight(el: HTMLElement | null) {
 function RotatedLabel({ children }: { children: string }): JSX.Element {
 	return (
 		<div className="flex flex-row items-start gap-2 self-stretch">
-			<span className="text-xs tracking-widest text-muted-foreground uppercase sticky top-10" style={{ writingMode: "vertical-rl", transform: "rotate(180deg)" }}>
+			<span className="text-xs tracking-widest text-portal uppercase sticky top-10" style={{ writingMode: "vertical-rl", transform: "rotate(180deg)" }}>
 				{children}
 			</span>
-			<div className="w-px bg-foreground self-stretch" />
+			<div className="w-px bg-portal self-stretch" />
 		</div>
 	);
 }
@@ -148,15 +148,15 @@ function RotatedLabel({ children }: { children: string }): JSX.Element {
 function HorizontalLabel({ children }: { children: string }): JSX.Element {
 	return (
 		<div className="flex flex-col gap-2 mb-3">
-			<span className="text-xs tracking-widest text-muted-foreground uppercase">{children}</span>
-			<div className="h-px bg-foreground w-full" />
+			<span className="text-xs tracking-widest text-portal uppercase">{children}</span>
+			<div className="h-px bg-portal w-full" />
 		</div>
 	);
 }
 
 function LinkedName({ label, href }: PastLink): JSX.Element {
 	return (
-		<a href={href} className="font-medium text-foreground underline underline-offset-2 hover:opacity-70 transition-opacity">
+		<a href={href} className="font-medium text-portal underline underline-offset-2 hover:opacity-70 transition-opacity">
 			{label}
 		</a>
 	);

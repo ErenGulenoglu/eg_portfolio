@@ -7,10 +7,10 @@ import unilink_image from "../../assets/CCT434/unilinkpreview.png";
 function RotatedLabel({ children }: { children: string }): JSX.Element {
 	return (
 		<div className="flex flex-row items-start gap-2 self-stretch">
-			<span className="text-xs tracking-widest text-muted-foreground uppercase sticky top-10" style={{ writingMode: "vertical-rl", transform: "rotate(180deg)" }}>
+			<span className="text-xs tracking-widest text-portal uppercase sticky top-10" style={{ writingMode: "vertical-rl", transform: "rotate(180deg)" }}>
 				{children}
 			</span>
-			<div className="w-px bg-foreground self-stretch" />
+			<div className="w-px bg-portal self-stretch" />
 		</div>
 	);
 }
@@ -18,8 +18,8 @@ function RotatedLabel({ children }: { children: string }): JSX.Element {
 function HorizontalLabel({ children }: { children: string }): JSX.Element {
 	return (
 		<div className="flex flex-col gap-2 mb-3">
-			<span className="text-xs tracking-widest text-muted-foreground uppercase">{children}</span>
-			<div className="h-px bg-foreground w-full" />
+			<span className="text-xs tracking-widest text-portal uppercase">{children}</span>
+			<div className="h-px bg-portal w-full" />
 		</div>
 	);
 }
@@ -58,7 +58,7 @@ export default function ProjectsSection(): JSX.Element {
 						</Link>
 					</div>
 
-					<div className="h-px bg-foreground/20 w-full" />
+					<div className="h-px bg-muted-portal w-full" />
 
 					{/* Project 2 */}
 					<div className="flex flex-col gap-3">
@@ -79,7 +79,7 @@ export default function ProjectsSection(): JSX.Element {
 						</Link>
 					</div>
 
-					<div className="h-px bg-foreground/20 w-full" />
+					<div className="h-px bg-muted-portal w-full" />
 
 					{/* Project 3 */}
 					<div className="flex flex-col gap-3">

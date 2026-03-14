@@ -134,6 +134,24 @@
 		font-optical-sizing: auto;
 		font-style: normal;
 	}
+	.text-portal {
+		color: #f4600c;
+	}
+	.bg-portal {
+		background-color: #f4600c;
+	}
+	.text-muted-portal {
+		color: color-mix(in srgb, #f4600c 60%, transparent);
+	}
+	.bg-muted-portal {
+		background-color: color-mix(in srgb, #f4600c 60%, transparent);
+	}
+	.border-muted-portal {
+		border-color: color-mix(in srgb, #f4600c 60%, transparent);
+	}
+	.hover\:bg-muted-portal:hover {
+		background-color: color-mix(in srgb, #f4600c 20%, transparent);
+	}
 }
 
 @layer base {
@@ -159,6 +177,6 @@
 	}
 	body {
 		@apply bg-background text-foreground;
-		background-color: #f5f5f5;
+		background-color: #faf8f5;
 	}
 }
