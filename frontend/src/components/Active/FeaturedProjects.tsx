@@ -50,10 +50,8 @@ export default function ProjectsSection(): JSX.Element {
 							iterative prototyping, the project addresses common challenges such as scattered club information, low engagement, and difficulty balancing academic and social life. The final design
 							emphasizes clarity, accessibility, and familiar social interactions to support meaningful participation in campus life.
 						</p>
-						<Link to="/utm-connect-ux">
-							<button className="bg-foreground text-white hover:cursor-pointer px-4 py-2">
-								<span>View Project</span>
-							</button>
+						<Link to="/utm-connect-ux" className="flex bg-foreground text-white hover:cursor-pointer w-28 h-10 text-center items-center justify-center">
+							<span>View Project</span>
 						</Link>
 					</div>
 
@@ -70,10 +68,8 @@ export default function ProjectsSection(): JSX.Element {
 							wait times shape user frustration. Using Contextual Inquiry, I observed how experienced makers navigate a structured and time-limited library environment while preparing and submitting
 							3D prints.
 						</p>
-						<Link to="/hazel-mccallion-ux">
-							<button className="bg-foreground text-white hover:cursor-pointer px-4 py-2">
-								<span>View Project</span>
-							</button>
+						<Link to="/hazel-mccallion-ux" className="flex bg-foreground text-white hover:cursor-pointer w-28 h-10 text-center items-center justify-center">
+							<span>View Project</span>
 						</Link>
 					</div>
 
@@ -91,10 +87,8 @@ export default function ProjectsSection(): JSX.Element {
 							low-pressure interactions, UniLink encourages authentic connections, in-person meetups, and cross-cultural communication, making it easier for students to expand their social networks
 							and navigate campus life.
 						</p>
-						<Link to="/unilink-ux">
-							<button className="bg-foreground text-white hover:cursor-pointer px-4 py-2">
-								<span>View Project</span>
-							</button>
+						<Link to="/unilink-ux" className="flex bg-foreground text-white hover:cursor-pointer w-28 h-10 text-center items-center justify-center">
+							<span>View Project</span>
 						</Link>
 					</div>
 				</div>
@@ -123,10 +117,8 @@ export default function ProjectsSection(): JSX.Element {
 										research and iterative prototyping, the project addresses common challenges such as scattered club information, low engagement, and difficulty balancing academic and social life.
 										The final design emphasizes clarity, accessibility, and familiar social interactions to support meaningful participation in campus life.
 									</p>
-									<Link to="/utm-connect-ux">
-										<button className="bg-foreground text-white hover:cursor-pointer px-4 py-2">
-											<span>View Project</span>
-										</button>
+									<Link to="/utm-connect-ux" className="flex bg-foreground text-white hover:cursor-pointer w-28 h-10 text-center items-center justify-center">
+										<span>View Project</span>
 									</Link>
 								</div>
 								<div className="w-[50%] h-[16em] rounded-sm overflow-hidden border border-black">
@@ -145,10 +137,8 @@ export default function ProjectsSection(): JSX.Element {
 										unclear wait times shape user frustration. Using Contextual Inquiry, I observed how experienced makers navigate a structured and time-limited library environment while preparing
 										and submitting 3D prints.
 									</p>
-									<Link to="/hazel-mccallion-ux">
-										<button className="bg-foreground text-white hover:cursor-pointer px-4 py-2">
-											<span>View Project</span>
-										</button>
+									<Link to="/hazel-mccallion-ux" className="flex bg-foreground text-white hover:cursor-pointer w-28 h-10 text-center items-center justify-center">
+										<span>View Project</span>
 									</Link>
 								</div>
 								<div className="w-[50%] h-[16em] rounded-sm overflow-hidden border border-black">
@@ -168,10 +158,8 @@ export default function ProjectsSection(): JSX.Element {
 										interface and low-pressure interactions, UniLink encourages authentic connections, in-person meetups, and cross-cultural communication, making it easier for students to expand
 										their social networks and navigate campus life.
 									</p>
-									<Link to="/unilink-ux">
-										<button className="bg-foreground text-white hover:cursor-pointer px-4 py-2">
-											<span>View Project</span>
-										</button>
+									<Link to="/unilink-ux" className="flex bg-foreground text-white hover:cursor-pointer w-28 h-10 text-center items-center justify-center">
+										<span>View Project</span>
 									</Link>
 								</div>
 								<div className="w-[50%] h-[16em] rounded-sm overflow-hidden border border-black">

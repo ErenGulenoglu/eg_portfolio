@@ -1,13 +1,11 @@
 import { memo, useEffect } from "react";
 
 import NavigationBar from "../../components/Active/NavigationBar";
-import About from "../../components/Active/About";
-import FeaturedProjects from "../../components/Active/FeaturedProjects";
-import Resources from "../../components/Active/Resources";
+import AllProjects from "../../components/Active/AllProjects";
 
-function Home() {
+function UTMConnect() {
 	useEffect(() => {
-		document.title = "Eren Gulenoglu - Home";
+		document.title = "Eren Gulenoglu - Portfolio";
 	});
 	return (
 		<div>
@@ -15,9 +13,7 @@ function Home() {
 				<main className="flex flex-col justify-center items-center w-full lg:w-[60em]">
 					<NavigationBar className="mb-8" />
 					<div className="flex flex-col w-full justify-center items-start">
-						<About />
-						<Resources />
-						<FeaturedProjects />
+						<AllProjects />
 					</div>
 				</main>
 			</div>
@@ -25,4 +21,4 @@ function Home() {
 	);
 }
 
-export default memo(Home);
+export default memo(UTMConnect);

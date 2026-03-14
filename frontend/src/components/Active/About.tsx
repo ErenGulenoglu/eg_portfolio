@@ -1,6 +1,5 @@
 import { useRef, useEffect, useCallback, type JSX } from "react";
-
-type IconType = "target" | "chat" | "star";
+import { Search, Code, Component } from "lucide-react";
 
 type PastLink = {
 	label: string;
@@ -133,30 +132,6 @@ function clearHighlight(el: HTMLElement | null) {
 	if (!el) return;
 	el.style.backgroundColor = "";
 	el.style.color = "";
-}
-
-function NowIcon({ type }: { type: IconType }): JSX.Element {
-	if (type === "target") {
-		return (
-			<svg width="14" height="14" viewBox="0 0 16 16" fill="none">
-				<circle cx="8" cy="8" r="5" stroke="currentColor" strokeWidth="1.5" />
-				<circle cx="8" cy="8" r="2" fill="currentColor" />
-			</svg>
-		);
-	}
-	if (type === "chat") {
-		return (
-			<svg width="14" height="14" viewBox="0 0 16 16" fill="none">
-				<path d="M3 6c0-1.1.9-2 2-2h6a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6z" stroke="currentColor" strokeWidth="1.5" />
-				<circle cx="6" cy="6" r="1" fill="currentColor" />
-			</svg>
-		);
-	}
-	return (
-		<svg width="14" height="14" viewBox="0 0 16 16" fill="none">
-			<path d="M8 2l1.5 3.5L13 6l-2.5 2.5.5 3.5L8 10.5 5 12l.5-3.5L3 6l3.5-.5L8 2z" stroke="currentColor" strokeWidth="1.2" strokeLinejoin="round" />
-		</svg>
-	);
 }
 
 function RotatedLabel({ children }: { children: string }): JSX.Element {
@@ -298,8 +273,8 @@ export default function AboutSection(): JSX.Element {
 					<HorizontalLabel>Now</HorizontalLabel>
 					<div className="space-y-6">
 						<div className="flex items-start gap-3">
-							<div className="w-7 h-7 rounded-full flex items-center justify-center shrink-0 mt-0.5">
-								<NowIcon type="target" />
+							<div className="w-7 h-7 rounded-full flex items-center justify-center shrink-0 mt-0.5 text-foreground">
+								<Search size={14} />
 							</div>
 							<p className="text-sm leading-relaxed text-foreground">
 								<strong>UX Research</strong> — Leading qualitative research through Contextual Inquiry, Participatory Design, and user journey mapping. Identifying systemic breakdowns and friction via
@@ -307,16 +282,16 @@ export default function AboutSection(): JSX.Element {
 							</p>
 						</div>
 						<div className="flex items-start gap-3">
-							<div className="w-7 h-7 rounded-full flex items-center justify-center shrink-0 mt-0.5">
-								<NowIcon type="chat" />
+							<div className="w-7 h-7 rounded-full flex items-center justify-center shrink-0 mt-0.5 text-foreground">
+								<Component size={14} />
 							</div>
 							<p className="text-sm leading-relaxed text-foreground">
 								<strong>UI/UX Design</strong> — Architecting user-centric designs and high-fidelity prototypes using Figma and Adobe XD.
 							</p>
 						</div>
 						<div className="flex items-start gap-3">
-							<div className="w-7 h-7 rounded-full flex items-center justify-center shrink-0 mt-0.5">
-								<NowIcon type="star" />
+							<div className="w-7 h-7 rounded-full flex items-center justify-center shrink-0 mt-0.5 text-foreground">
+								<Code size={14} />
 							</div>
 							<p className="text-sm leading-relaxed text-foreground">
 								<strong>Digital Development</strong> — Developing digital solutions and building responsive interfaces through TypeScript, Python, and React.
@@ -371,8 +346,8 @@ export default function AboutSection(): JSX.Element {
 					<RotatedLabel>Now</RotatedLabel>
 					<div className="space-y-6 py-2">
 						<div className="flex items-start gap-3">
-							<div className="w-7 h-7 rounded-full flex items-center justify-center shrink-0 mt-0.5">
-								<NowIcon type="target" />
+							<div className="w-7 h-7 rounded-full flex items-center justify-center shrink-0 mt-0.5 text-foreground">
+								<Search size={14} />
 							</div>
 							<p className="text-sm leading-relaxed text-foreground">
 								<strong
@@ -387,8 +362,8 @@ export default function AboutSection(): JSX.Element {
 							</p>
 						</div>
 						<div className="flex items-start gap-3">
-							<div className="w-7 h-7 rounded-full flex items-center justify-center shrink-0 mt-0.5">
-								<NowIcon type="chat" />
+							<div className="w-7 h-7 rounded-full flex items-center justify-center shrink-0 mt-0.5 text-foreground">
+								<Component size={14} />
 							</div>
 							<p className="text-sm leading-relaxed text-foreground">
 								<strong
@@ -402,8 +377,8 @@ export default function AboutSection(): JSX.Element {
 							</p>
 						</div>
 						<div className="flex items-start gap-3">
-							<div className="w-7 h-7 rounded-full flex items-center justify-center shrink-0 mt-0.5">
-								<NowIcon type="star" />
+							<div className="w-7 h-7 rounded-full flex items-center justify-center shrink-0 mt-0.5 text-foreground">
+								<Code size={14} />
 							</div>
 							<p className="text-sm leading-relaxed text-foreground">
 								<strong>Digital Development</strong> — Developing digital solutions and building responsive interfaces through TypeScript, Python, and React.
