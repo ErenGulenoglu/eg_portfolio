@@ -58,7 +58,7 @@ function HML() {
 							rel="noreferrer"
 							className="flex justify-center items-center bg-foreground text-background w-38 h-10 text-sm hover:opacity-80 transition-opacity cursor-pointer"
 						>
-							<span className="text-md">View LinkedIn Post ↗</span>
+							<span className="text-md">View LinkedIn Post</span>
 						</a>
 					</div>
 

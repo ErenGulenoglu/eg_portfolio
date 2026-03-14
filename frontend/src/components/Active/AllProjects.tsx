@@ -44,6 +44,9 @@ export default function ProjectsSection(): JSX.Element {
 							iterative prototyping, the project addresses common challenges such as scattered club information, low engagement, and difficulty balancing academic and social life. The final design
 							emphasizes clarity, accessibility, and familiar social interactions to support meaningful participation in campus life.
 						</p>
+						<p>
+							<strong>Tools:</strong> Figma, Miro
+						</p>
 						<Link to="/utm-connect-ux" className="flex bg-foreground text-white hover:cursor-pointer w-28 h-10 text-center items-center justify-center">
 							<span>View Project</span>
 						</Link>
@@ -61,6 +64,9 @@ export default function ProjectsSection(): JSX.Element {
 							This project investigates the user experience of 3D printing services at the Hazel McCallion Central Library's makerspace, focusing on how transparency, staff dependency, and unclear
 							wait times shape user frustration. Using Contextual Inquiry, I observed how experienced makers navigate a structured and time-limited library environment while preparing and submitting
 							3D prints.
+						</p>
+						<p>
+							<strong>Tools:</strong> Miro, Canva
 						</p>
 						<Link to="/hazel-mccallion-ux" className="flex bg-foreground text-white hover:cursor-pointer w-28 h-10 text-center items-center justify-center">
 							<span>View Project</span>
@@ -81,10 +87,15 @@ export default function ProjectsSection(): JSX.Element {
 							low-pressure interactions, UniLink encourages authentic connections, in-person meetups, and cross-cultural communication, making it easier for students to expand their social networks
 							and navigate campus life.
 						</p>
+						<p>
+							<strong>Tools:</strong> Adobe XD
+						</p>
 						<Link to="/unilink-ux" className="flex bg-foreground text-white hover:cursor-pointer w-28 h-10 text-center items-center justify-center">
 							<span>View Project</span>
 						</Link>
 					</div>
+
+					<div className="h-px bg-foreground/20 w-full" />
 
 					{/* Project 4 */}
 					<div className="flex flex-col gap-3">
@@ -95,6 +106,9 @@ export default function ProjectsSection(): JSX.Element {
 						<p className="text-sm text-muted-foreground leading-relaxed">
 							I created this project by following tutorials to strengthen my skills in Figma’s design tools. Through this process, I learned how to create and apply linear gradients, effectively use
 							frames and groups to improve spacing and layout, design original shapes using the Bend tool, and integrate plugins and design kits into my workflow.
+						</p>
+						<p>
+							<strong>Tools:</strong> Figma
 						</p>
 						<Link to="/cinema-booking-ui" className="flex bg-foreground text-white hover:cursor-pointer w-28 h-10 text-center items-center justify-center">
 							<span>View Project</span>
@@ -119,6 +133,9 @@ export default function ProjectsSection(): JSX.Element {
 										research and iterative prototyping, the project addresses common challenges such as scattered club information, low engagement, and difficulty balancing academic and social life.
 										The final design emphasizes clarity, accessibility, and familiar social interactions to support meaningful participation in campus life.
 									</p>
+									<p>
+										<strong>Tools:</strong> Figma, Miro
+									</p>
 									<Link to="/utm-connect-ux" className="flex bg-foreground text-white hover:cursor-pointer w-28 h-10 text-center items-center justify-center">
 										<span>View Project</span>
 									</Link>
@@ -138,6 +155,9 @@ export default function ProjectsSection(): JSX.Element {
 										This project investigates the user experience of 3D printing services at the Hazel McCallion Central Library's makerspace, focusing on how transparency, staff dependency, and
 										unclear wait times shape user frustration. Using Contextual Inquiry, I observed how experienced makers navigate a structured and time-limited library environment while preparing
 										and submitting 3D prints.
+									</p>
+									<p>
+										<strong>Tools:</strong> Miro, Canva
 									</p>
 									<Link to="/hazel-mccallion-ux" className="flex bg-foreground text-white hover:cursor-pointer w-28 h-10 text-center items-center justify-center">
 										<span>View Project</span>
@@ -160,6 +180,9 @@ export default function ProjectsSection(): JSX.Element {
 										interface and low-pressure interactions, UniLink encourages authentic connections, in-person meetups, and cross-cultural communication, making it easier for students to expand
 										their social networks and navigate campus life.
 									</p>
+									<p>
+										<strong>Tools:</strong> Adobe XD
+									</p>
 									<Link to="/unilink-ux" className="flex bg-foreground text-white hover:cursor-pointer w-28 h-10 text-center items-center justify-center">
 										<span>View Project</span>
 									</Link>
@@ -179,7 +202,9 @@ export default function ProjectsSection(): JSX.Element {
 										I created this project by following tutorials to strengthen my skills in Figma’s design tools. Through this process, I learned how to create and apply linear gradients, effectively
 										use frames and groups to improve spacing and layout, design original shapes using the Bend tool, and integrate plugins and design kits into my workflow.
 									</p>
-
+									<p>
+										<strong>Tools:</strong> Figma
+									</p>
 									<Link to="/cinema-booking-ui" className="flex bg-foreground text-white hover:cursor-pointer w-28 h-10 text-center items-center justify-center">
 										<span>View Project</span>
 									</Link>

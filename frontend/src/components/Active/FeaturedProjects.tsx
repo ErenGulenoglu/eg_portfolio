@@ -50,6 +50,9 @@ export default function ProjectsSection(): JSX.Element {
 							iterative prototyping, the project addresses common challenges such as scattered club information, low engagement, and difficulty balancing academic and social life. The final design
 							emphasizes clarity, accessibility, and familiar social interactions to support meaningful participation in campus life.
 						</p>
+						<p>
+							<strong>Tools:</strong> Figma, Miro
+						</p>
 						<Link to="/utm-connect-ux" className="flex bg-foreground text-white hover:cursor-pointer w-28 h-10 text-center items-center justify-center">
 							<span>View Project</span>
 						</Link>
@@ -67,6 +70,9 @@ export default function ProjectsSection(): JSX.Element {
 							This project investigates the user experience of 3D printing services at the Hazel McCallion Central Library's makerspace, focusing on how transparency, staff dependency, and unclear
 							wait times shape user frustration. Using Contextual Inquiry, I observed how experienced makers navigate a structured and time-limited library environment while preparing and submitting
 							3D prints.
+						</p>
+						<p>
+							<strong>Tools:</strong> Miro, Canva
 						</p>
 						<Link to="/hazel-mccallion-ux" className="flex bg-foreground text-white hover:cursor-pointer w-28 h-10 text-center items-center justify-center">
 							<span>View Project</span>
@@ -86,6 +92,9 @@ export default function ProjectsSection(): JSX.Element {
 							credentials, the app ensures all users are real students while focusing on interest-based and academic matching rather than superficial swiping. Designed with an intuitive interface and
 							low-pressure interactions, UniLink encourages authentic connections, in-person meetups, and cross-cultural communication, making it easier for students to expand their social networks
 							and navigate campus life.
+						</p>
+						<p>
+							<strong>Tools:</strong> Adobe XD
 						</p>
 						<Link to="/unilink-ux" className="flex bg-foreground text-white hover:cursor-pointer w-28 h-10 text-center items-center justify-center">
 							<span>View Project</span>
@@ -117,6 +126,9 @@ export default function ProjectsSection(): JSX.Element {
 										research and iterative prototyping, the project addresses common challenges such as scattered club information, low engagement, and difficulty balancing academic and social life.
 										The final design emphasizes clarity, accessibility, and familiar social interactions to support meaningful participation in campus life.
 									</p>
+									<p>
+										<strong>Tools:</strong> Figma, Miro
+									</p>
 									<Link to="/utm-connect-ux" className="flex bg-foreground text-white hover:cursor-pointer w-28 h-10 text-center items-center justify-center">
 										<span>View Project</span>
 									</Link>
@@ -136,6 +148,9 @@ export default function ProjectsSection(): JSX.Element {
 										This project investigates the user experience of 3D printing services at the Hazel McCallion Central Library's makerspace, focusing on how transparency, staff dependency, and
 										unclear wait times shape user frustration. Using Contextual Inquiry, I observed how experienced makers navigate a structured and time-limited library environment while preparing
 										and submitting 3D prints.
+									</p>
+									<p>
+										<strong>Tools:</strong> Miro, Canva
 									</p>
 									<Link to="/hazel-mccallion-ux" className="flex bg-foreground text-white hover:cursor-pointer w-28 h-10 text-center items-center justify-center">
 										<span>View Project</span>
@@ -157,6 +172,9 @@ export default function ProjectsSection(): JSX.Element {
 										credentials, the app ensures all users are real students while focusing on interest-based and academic matching rather than superficial swiping. Designed with an intuitive
 										interface and low-pressure interactions, UniLink encourages authentic connections, in-person meetups, and cross-cultural communication, making it easier for students to expand
 										their social networks and navigate campus life.
+									</p>
+									<p>
+										<strong>Tools:</strong> Adobe XD
 									</p>
 									<Link to="/unilink-ux" className="flex bg-foreground text-white hover:cursor-pointer w-28 h-10 text-center items-center justify-center">
 										<span>View Project</span>

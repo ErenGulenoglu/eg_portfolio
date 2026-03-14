@@ -61,7 +61,7 @@ function UniLink() {
 							target="_blank"
 							className="flex justify-center items-center bg-foreground text-background w-30 h-10 text-sm hover:opacity-80 transition-opacity cursor-pointer"
 						>
-							<span className="text-md">View Prototype ↗</span>
+							<span className="text-md">View Prototype</span>
 						</Link>
 					</div>
 
