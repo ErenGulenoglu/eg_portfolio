@@ -51,7 +51,7 @@ export default function ProjectsSection(): JSX.Element {
 						<ButtonProt extension="/utm-connect-ux" buttonText="View Project" className="w-28 h-10" />
 					</div>
 
-					<div className="h-px bg-foreground/20 w-full" />
+					<div className="h-px bg-muted-portal w-full" />
 
 					{/* Project 2 */}
 					<div className="flex flex-col gap-3">
@@ -70,7 +70,7 @@ export default function ProjectsSection(): JSX.Element {
 						<ButtonProt extension="/hazel-mccallion-ux" buttonText="View Project" className="w-28 h-10" />
 					</div>
 
-					<div className="h-px bg-foreground/20 w-full" />
+					<div className="h-px bg-muted-portal w-full" />
 
 					{/* Project 3 */}
 					<div className="flex flex-col gap-3">
@@ -90,7 +90,7 @@ export default function ProjectsSection(): JSX.Element {
 						<ButtonProt extension="/unilink-ux" buttonText="View Project" className="w-28 h-10" />
 					</div>
 
-					<div className="h-px bg-foreground/20 w-full" />
+					<div className="h-px bg-muted-portal w-full" />
 
 					{/* Project 4 */}
 					<div className="flex flex-col gap-3">
